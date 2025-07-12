@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayoub | Software Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .logo a{
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+
+    }
+    nav ul li a:hover {
+      color: #fff;
+    }
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      padding-bottom: 200px;
+    }
+    #hero img {
+      width: 500px;
+      height: 500px;
+      border-radius: 10%;
+      margin-bottom: 1rem;
+      border: 0px solid #444;
+    }
+    #hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .cta {
+      margin-top: 1.5rem;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #fff;
+      color: #000;
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+    .card {
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .skill {
+      background: #222;
+      padding: 0.5rem 4rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      transition: all 0.5s;
+    }
+    .skill:hover{
+        background-color: #777;
+        transition: all 0.5s;
+    }
+    .contact-info {
+      text-align: center;
+    }
+    .contact-info a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #272727;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="#hero">Ayoub</a></div>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+
+    <h1>Ayoub Bouabdallah</h1>
+    <p>Software Engineer — Phone , Web & full-stack Developer</p>
+    <a href="#contact" class="cta">Contact Me</a>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+      <h3>📱 Store Manager App</h3>
+      <p>Android app for store owners to manage inventory, update products, and track daily profit.</p>
+      <p><strong>Tech Used:</strong> Java, Room DB, Android XML</p>
+    </div>
+
+    <div class="card">
+      <h3>🌐 patient management Web App </h3>
+      <p>A full-stack web app to create, edit, and complete tasks. With login and dashboard.</p>
+      <p><strong>Tech Used:</strong> MongoDB, Express, React, Node.js</p>
+    </div>
+
+    <div class="card">
+      <h3>🧮 Java Seller management Desktop App </h3>
+      <p>A Java management desk app where the menager can add, edit, delete product and manage stock </p>
+      <p><strong>Tech Used:</strong> Java, XML</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Some of my languages</h2>
+    <div class="card skills-list">
+      <span class="skill">Java</span>
+      <span class="skill">html</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">css</span>
+      <span class="skill">C</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">php</span>
+      <span class="skill">laravel</span>
+      <span class="skill">Python</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card contact-info">
+      <p>Email: <a href="mailto:bouabdallahayoubibrahim@gmail.com">bouabdallahayoubibrahim@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Ayoub-10">github.com/Ayoub-10</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ayoub-ibrahim-bouabdallah/">linkedin.com/in/ayoub-ibrahim-bouabdallah</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ayoub Bouabdallah <br>All rights are reserved
+  </footer>
+</body>
+</html>
